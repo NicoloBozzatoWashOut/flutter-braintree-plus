@@ -1,33 +1,3 @@
-// buildscript {
-//     repositories {
-//         google()
-//         jcenter()
-//     }
-
-//     dependencies {
-//         classpath 'com.android.tools.build:gradle:4.1.0'
-//     }
-// }
-
-// allprojects {
-//     repositories {
-//         google()
-//         jcenter()
-//     }
-// }
-
-// rootProject.buildDir = '../build'
-// subprojects {
-//     project.buildDir = "${rootProject.buildDir}/${project.name}"
-// }
-// subprojects {
-//     project.evaluationDependsOn(':app')
-// }
-
-// tasks.register("clean", Delete) {
-//     delete rootProject.layout.buildDirectory
-// }
-
 allprojects {
     repositories {
         google()
