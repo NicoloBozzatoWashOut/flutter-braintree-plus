@@ -1,3 +1,20 @@
+## 5.0.6
+
+### Build System Updates
+- **Android**: Updated Android Gradle Plugin to 8.1.4 for better compatibility
+- **Android**: Updated compileSdk to 34 (Android 14) from 28
+- **Android**: Updated Java compatibility from Java 8 to Java 17 (LTS)
+- **Android**: Fixed all Gradle deprecation warnings for Gradle 9.0+ compatibility
+- **Android**: Replaced deprecated `jcenter()` with `mavenCentral()`
+- **Android**: Updated property assignment syntax to modern format
+- **Example App**: Added missing AppCompat dependency to fix build issues
+- **Example App**: Updated Kotlin configuration to use modern `compilerOptions` DSL
+
+### Improvements
+- Enhanced build reliability across different Android development environments
+- Future-proofed build configuration for upcoming Gradle versions
+- Improved development experience with cleaner build output
+
 ## 5.0.5
 
 ### Features
