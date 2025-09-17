@@ -31,6 +31,14 @@ class _MyAppState extends State<MyApp> {
   static final String tokenizationKey = 'sandbox_x65773jc_yhgk5ghs4hkpgq4f';
 
   void showNonce(BraintreePaymentMethodNonce nonce) {
+    print('=== PayPal Response ===');
+    print('Nonce: ${nonce.nonce}');
+    print('Type Label: ${nonce.typeLabel}');
+    print('Description: ${nonce.description}');
+    print('Is Default: ${nonce.isDefault}');
+    print('Amount: ${nonce.amount}');
+    print('=====================');
+
     showDialog(
       context: context,
       builder: (_) => AlertDialog(

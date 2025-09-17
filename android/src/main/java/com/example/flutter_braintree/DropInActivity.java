@@ -16,6 +16,7 @@ public class DropInActivity extends AppCompatActivity implements DropInListener 
     private DropInClient dropInClient;
     private DropInRequest dropInRequest;
     private boolean isDropInStarted = false;
+    private String originalAmount; // Store the original amount
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,9 @@ public class DropInActivity extends AppCompatActivity implements DropInListener 
             handleError(new IllegalArgumentException("DropInRequest is required."));
             return;
         }
+
+        // Store the original amount if provided
+        originalAmount = intent.getStringExtra("originalAmount");
 
         // Initialize DropInClient and set the listener
         dropInClient = new DropInClient(this, token);
@@ -56,6 +60,10 @@ public class DropInActivity extends AppCompatActivity implements DropInListener 
         isDropInStarted = false;
         Intent result = new Intent();
         result.putExtra("dropInResult", dropInResult);
+        // Pass back the original amount if it was provided
+        if (originalAmount != null) {
+            result.putExtra("originalAmount", originalAmount);
+        }
         setResult(RESULT_OK, result);
         finish();
     }

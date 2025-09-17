@@ -59,7 +59,7 @@ public class FlutterBraintreeCustomPlugin: BaseFlutterBraintreePlugin, FlutterPl
                     }
                 }
                 driver.tokenizePayPalAccount(with: paypalRequest) { (nonce, error) in
-                    self.handleResult(nonce: nonce, error: error, flutterResult: result)
+                    self.handleResult(nonce: nonce, error: error, flutterResult: result, amount: amount)
                     self.isHandlingResult = false
                 }
             } else {
