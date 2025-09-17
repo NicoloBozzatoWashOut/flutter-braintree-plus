@@ -1,24 +1,6 @@
 ## 5.0.7
 
-### Bug Fixes
-- **Android**: Fixed PayPal vault flow compilation errors by adding missing `HashMap` import
-- **Android**: Removed unsupported `setShouldOfferCreditAndPayLater()` method calls that don't exist in current Braintree SDK
-- **Android**: Fixed PayPal checkout flow not returning transaction amount in response
-- **iOS**: Fixed PayPal checkout flow not returning transaction amount in response
-
-### Improvements
-- **Enhanced Amount Handling**: PayPal checkout flows now properly return the original transaction amount on both platforms
-- **Better Flow Differentiation**: Improved logic to distinguish between vault (billing agreement) and checkout (one-time payment) flows
-- **Debug Logging**: Added debug logs to help verify which PayPal flow is being executed
-- **Cross-Platform Consistency**: Ensured both Android and iOS implementations handle amounts consistently
-
-### Technical Details
-- **Android**: Updated `FlutterBraintreePlugin.java` and `DropInActivity.java` to pass and return amount data
-- **iOS**: Updated `FlutterBraintreeCustomPlugin.swift` to include amount in PayPal checkout responses
-- **Vault Flow**: Correctly returns `amount: null` for billing agreements
-- **Checkout Flow**: Correctly returns the specified transaction amount (e.g., `amount: "13.37"`)
-
-**Resolves**: PayPal vault not working on Android #2
+- Fixed PayPal vault not working on Android #2
 
 ## 5.0.6
 
