@@ -69,6 +69,12 @@ browser switch by adding an intent filter to your `AndroidManifest.xml` (inside 
 </activity>
 <activity android:name="com.braintreepayments.api.ThreeDSecureActivity" android:theme="@style/Theme.AppCompat.Light" android:exported="true">
 </activity>
+
+<!-- Required for built-in credit card form -->
+<activity
+    android:name="com.example.flutter_braintree.FlutterBraintreeCustom"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    android:exported="true"/>
 ```
 
 **Important:** Your app's URL scheme must begin with your app's package ID and end with `.braintree`. For example, if the Package ID is `com.your-company.your-app`, then your URL scheme should be `com.your-company.your-app.braintree`. `${applicationId}` is automatically applied with your app's package when using Gradle.

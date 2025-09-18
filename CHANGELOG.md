@@ -1,3 +1,9 @@
+## 5.0.9
+
+### Documentation
+- Added Android manifest configuration for the built-in credit card form to the README
+- Clarified setup instructions for the custom credit card form UI
+
 ## 5.0.8
 
 ### Features
