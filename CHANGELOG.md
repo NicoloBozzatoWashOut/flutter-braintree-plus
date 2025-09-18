@@ -1,3 +1,13 @@
+## 5.0.8
+
+### Features
+- **Credit Card Type Detection**: Added automatic credit card type detection (Visa, Mastercard, Amex, etc.) with brand icons
+- **Card Validation**: Enhanced credit card validation including Luhn algorithm check and card type-specific validation
+
+### Build System Updates
+- **Android**: Updated compileSdk to 36 (Android 14) from 34
+- **Android**: Improved build configuration for better compatibility with latest Android tooling
+
 ## 5.0.7
 
 - Fixed PayPal vault not working on Android #2
