@@ -11,7 +11,7 @@ void main() => runApp(
             onPrimary: Colors.white,
             secondary: Colors.white,
             onSecondary: Colors.black,
-            error: Colors.red,
+            error: Color(0xff86151E),
             onError: Colors.white,
             surface: Colors.white,
             onSurface: Colors.black,

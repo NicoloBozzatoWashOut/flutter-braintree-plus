@@ -117,24 +117,27 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
                   ? Icon(Icons.warning_amber_outlined, color: Theme.of(context).colorScheme.error)
                   : widget.suffixIcon,
           enabledBorder: OutlineInputBorder(
-            borderSide: const BorderSide(color: Colors.grey, width: 2),
-            borderRadius: BorderRadius.circular(3.0),
+            borderSide: const BorderSide(
+              color: Colors.grey,
+              width: 2,
+            ),
+            borderRadius: BorderRadius.circular(10.0),
           ),
           focusedBorder: OutlineInputBorder(
             borderSide: BorderSide(color: Theme.of(context).primaryColor, width: 2),
-            borderRadius: BorderRadius.circular(3),
+            borderRadius: BorderRadius.circular(10.0),
           ),
           disabledBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: Colors.grey, width: 2),
-            borderRadius: BorderRadius.circular(3.0),
+            borderRadius: BorderRadius.circular(10.0),
           ),
           errorBorder: OutlineInputBorder(
             borderSide: BorderSide(color: Theme.of(context).colorScheme.error, width: 2),
-            borderRadius: BorderRadius.circular(3),
+            borderRadius: BorderRadius.circular(10.0),
           ),
           focusedErrorBorder: OutlineInputBorder(
             borderSide: BorderSide(color: Theme.of(context).colorScheme.error, width: 2),
-            borderRadius: BorderRadius.circular(3.0),
+            borderRadius: BorderRadius.circular(10.0),
           ),
         ),
         onChanged: widget.onChanged,

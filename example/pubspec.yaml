@@ -7,18 +7,17 @@ environment:
   sdk: ">=2.17.0 <4.0.0"
   flutter: ">=2.5.0"
 
-
 dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
+  braintree_flutter_plus:  # Move this here!
+    path: ../
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-  braintree_flutter_plus:
-    path: ../
+  # Remove braintree_flutter_plus from here
 
 flutter:
   uses-material-design: true

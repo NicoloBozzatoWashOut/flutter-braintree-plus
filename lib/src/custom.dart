@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'credit_card_from_screen.dart';
+import 'credit_card_form_screen.dart';
 import 'request.dart';
 import 'result.dart';
 
