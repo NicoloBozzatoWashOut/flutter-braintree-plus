@@ -6,8 +6,8 @@ repository: https://github.com/adlyyy4/flutter-braintree
 issue_tracker: https://github.com/adlyyy4/flutter-braintree/issues
 
 environment:
-  sdk: ^3.8.1
-  flutter: ">=2.5.0"
+  sdk: '>=3.9.2 <4.0.0'
+  flutter: ">=3.35.4"
 
 
 dependencies:

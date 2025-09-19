@@ -1,3 +1,10 @@
+## 5.1.0
+
+### Features
+- **Flutter 3.35.4 Compatibility**: Updated to support the latest stable Flutter version
+- **Dependency Updates**: Upgraded to latest stable versions of all dependencies
+
+
 ## 5.0.9
 
 ### Documentation
