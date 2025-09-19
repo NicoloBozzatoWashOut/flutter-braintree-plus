@@ -1,3 +1,7 @@
+## 5.1.1
+- Fixed environment constraints to support older Flutter/Dart versions.
+- No functional changes from 5.1.0.
+
 ## 5.1.0
 
 ### Features
